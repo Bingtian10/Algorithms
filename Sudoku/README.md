@@ -6,6 +6,7 @@ grow exponentially with larger board.
 ## Algorithm
 
 Solve(board)
+
 For each empty space (i,j) on the board:
   - Try to place number 1...9 on the (i,j) position.
       - If placing that number causes a invalid board, we move to the next number/solution.
@@ -16,6 +17,7 @@ For each empty space (i,j) on the board:
 We find the solution if we manage to fill every empty space on the board and reach here.
 
 Validate(board)
+
 To validate whether a number is legal in current board:
   - check the 3x3 sub-boxes if there's a same number
   - check the column if there's a same number
