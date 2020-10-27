@@ -1,18 +1,21 @@
 # A simple 9x9 Sudoku board solver
-Given a 9x9 sudoku board, we can use backtrack/depth first search to recursively search for
-all possible solution. 
+Given a nxn sudoku board, we can use backtrack/depth first search to recursively search for
+all possible solution. Here I used 9x9 as an example for convenience, as the algorithm runtime
+grow exponentially with larger board.
 
 ## Algorithm
 
+Solve(board)
 For each empty space (i,j) on the board:
   - Try to place number 1...9 on the (i,j) position.
       - If placing that number causes a invalid board, we move to the next number/solution.
-      - Else we go back to line 7 and recursively try to solve the board.
+      - Else we go solve the board recursively by invoking solve() with new pieces inserted.
   - If we try all possible solution recursively and none gives valid board, backtrack to previous
   number we try to fill in.
 
 We find the solution if we manage to fill every empty space on the board and reach here.
 
+Validate(board)
 To validate whether a number is legal in current board:
   - check the 3x3 sub-boxes if there's a same number
   - check the column if there's a same number
