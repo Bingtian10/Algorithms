@@ -2,6 +2,8 @@
 
 Try to imitate/implement the autocomplete logic behind google search bar.
 
+![Image of a Trie](trie_img.png)
+
 ## Brief Explanation
 We have a Trie data structure to store some strings that the user would query
 later on. 
@@ -47,6 +49,7 @@ helping
 
 And then we query for prefix "hel", this is what we would get:
 
+![Result of the query "hel" for autocompletion suggestion](result.png)
 
 ## Analysis
 
