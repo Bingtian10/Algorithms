@@ -19,26 +19,36 @@ To validate whether a number is legal in current board:
   - check the row if there's a same number
 
 ## Examples
+
 I grab a couple randomly generated sudoku board online and try it with the algorithm.
 
-1.
-![Image of a 9x9 sudoku board]
-(sample1.png)
+The site used to generate sudoku board and the solution. [Here!](https://www.sudokuweb.org/) 
+
+#### Sample1
+![Image of a 9x9 sudoku board](sample1.png)
 
 This is a sample unsolved board.
 
-![Image of the result return by algorithm]
-(result1.png)
+![Image of the result return by algorithm](result1.png)
 
 This is the result return by the code.
 
-![Image of the result given by the website]
-(sample1solution.png)
+![Image of the result given by the website](sample1solution.png)
 
 The solution given by online site.
 
-2.
-//TODO: insert sampleimg2, resultimg2
+#### Sample2
+![Image of a 9x9 sudoku board](sample2.png)
+
+This is a sample unsolved board.
+
+![Image of the result return by algorithm](result2.png)
+
+This is the result return by the code.
+
+![Image of the result given by the website](sample2solution.png)
+
+The solution given by online site.
 
 ## Analysis
 
