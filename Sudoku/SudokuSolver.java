@@ -1,9 +1,9 @@
-public class Suduku_solver {
+public class SudokuSolver {
 	//The solution board is return in place.
-	public void solve(char[][] board) {
+	public boolean solve(char[][] board) {
 		if(board == null || board.length == 0 || board[0].length == 0)
-			return;
-		backtrack(board);
+			return false;
+		return backtrack(board);
 	}
 
 	/**
@@ -31,7 +31,7 @@ public class Suduku_solver {
 		return true;
 	}
 
-	private boolean solve(char[][] board) {
+	private boolean backtrack(char[][] board) {
 		for(int i = 0; i < board.length; i++) {
 			for(int j = 0; j < board[0].length; j++) {
 				if(board[i][j] == '.') {
@@ -42,7 +42,7 @@ public class Suduku_solver {
 							board[i][j] = c;
 
 							//Recursively solve the rest of the board
-							if(solve(board)) {
+							if(backtrack(board)) {
 								return true;
 							}
 
