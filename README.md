@@ -1,1 +1,1 @@
-Contains personal projects, cool algorithms, etc.
+This repository contains implementation of popular/fun algorithms.
