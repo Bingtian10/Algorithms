@@ -1,1 +1,1 @@
-# Implementation of popular/fun algorithm
+This repository contains implementation of popular/fun algorithms.
