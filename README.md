@@ -1,1 +1,1 @@
-Contains personal projects, cool algorithms, etc.
+# Implementation of popular/fun algorithm
